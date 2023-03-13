@@ -58,6 +58,10 @@ text-transform: uppercase;
 .main-container{
     display: flex;
     align-items: center;
+    border: 1px solid #000000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 .page-nav{
     display: flex;
@@ -126,15 +130,19 @@ text-transform: uppercase;
 .container-hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    background-color: var(--background-color-black);
+    
 }
 .hero {
-    background: var(--background-color-black);
+    
     text-align: center;
+    
     
     
 }
 .hero-text {
-   
+    margin-left: 314px;
+    margin-right: 314px;
     margin-bottom: 48px;
     
     
@@ -185,9 +193,8 @@ text-transform: uppercase;
 .item-rules:last-child {
     margin-right: 0px;
 }
-.ourteam {
-    background: var(--background-color-white);
-}
+
+
 
 
 
@@ -253,16 +260,21 @@ text-transform: uppercase;
 .cont-ourteam {
     padding-top: 120px;
     padding-bottom: 120px;
+    background: var(--background-color-white);
 }
 
 
 .list-team {
     display: flex;
     padding-left: 0px;
+
 }
 
 .item-team {
     margin-right: 24px;
+    border: 0px solid #ffffff;
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 
 }
 .item-team:last-child {
@@ -270,14 +282,14 @@ text-transform: uppercase;
 }
 
 
-.footer {
-    background-color:  var(--background-color-black);
+
     
-}
+
 .container-footer{
     padding-top: 100px;
     padding-bottom: 100px;
     padding-right: 880px;
+    background-color:  var(--background-color-black);
    
 }
 .section-footer{
@@ -303,6 +315,9 @@ text-transform: uppercase;
 }
 
 .btn-portfolio {
+    
+    padding: 12px 24px;
+
     font-family: "Roboto", sans-serif;
     cursor: pointer;
     font-weight: 500;
@@ -314,6 +329,58 @@ text-transform: uppercase;
    
 }
 
+.btn-port {
+    margin-bottom: 72px;
+}
+
+.list-porfolio {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
 
 
+
+.list-foto-porfol {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.gallery {
+    
+    
+
+    margin-right: 24px;
+    margin-bottom: 30px;
+
+}
+
+.jpg-port{
+    display: block;
+   
+}
+.foto-team {
+    display: block;
+}
+    
+
+.gallery:nth-child(3n) {
+    margin-right: 0;
+}
+.gallery:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.text-portf {
+    border: 1px solid #E7E9FC;
+    border-top: 0;
+
+    padding: 32px;
+    padding-left: 16px;
+    
+}
+
+.container-port {
+    margin-bottom: 120px;
+}
 
