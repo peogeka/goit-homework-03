@@ -25,6 +25,7 @@ body {
 h1,h2,h3,h4,ul,p {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .container {
@@ -38,7 +39,7 @@ h1,h2,h3,h4,ul,p {
 
 .container-text {
     padding: 32px 16px;
-    background-color: white;
+    
     text-align: center;
     margin: 0 auto;
 }
@@ -54,14 +55,16 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 
 }
-
-.main-container{
-    display: flex;
-    align-items: center;
+.page-header{
     border: 1px solid #000000;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
 }
 .page-nav{
     display: flex;
@@ -127,23 +130,26 @@ text-transform: uppercase;
 
 }
 
-.container-hero {
+
+
+.hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
     background-color: var(--background-color-black);
-    
-}
-.hero {
     
     text-align: center;
     
-    
-    
+        
 }
 .hero-text {
-    margin-left: 314px;
-    margin-right: 314px;
-    margin-bottom: 48px;
+    width: 496px;
+    height: 120px;
+    
+    margin: auto;
+    
+    
     
     
 
@@ -158,6 +164,7 @@ text-transform: uppercase;
     border-radius: 4px;
     padding: 16px 32px;
     border: 1px solid transparent;
+    margin-top: 48px;
     
 
     font-family: "Roboto", sans-serif ;
@@ -169,24 +176,31 @@ text-transform: uppercase;
     line-height: 1.5;
     letter-spacing: 0.04em;
 }
-.portfolio-cont {
 
-    margin-bottom: 95px
-
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--hover-focus-color);
 }
 
 
 
+
+.rules{
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
 
 
 
 .rules-list {
     display: flex;
-    margin-top: 120px;
-    margin-bottom: 120px;
+   
 }
 
 .item-rules {
+    width: calc(100% / 4);
     margin-right: 24px;
 
 }
@@ -242,10 +256,16 @@ text-transform: uppercase;
     text-transform: capitalize;
     color: var( --title-text-color);
 }
-
+.example{
+    padding-bottom: 120px;
+}
+.foto-example {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .what-are-doing {
     display: flex;
-    margin-bottom: 104px;
     padding-left: 0px;
 }
 
@@ -257,12 +277,14 @@ text-transform: uppercase;
     margin-right: 0px; 
 }
 
-.cont-ourteam {
+
+   
+
+.ourteam{
     padding-top: 120px;
     padding-bottom: 120px;
     background: var(--background-color-white);
 }
-
 
 .list-team {
     display: flex;
@@ -272,7 +294,6 @@ text-transform: uppercase;
 
 .item-team {
     margin-right: 24px;
-    border: 0px solid #ffffff;
     background: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
 
@@ -282,18 +303,9 @@ text-transform: uppercase;
 }
 
 
-
-    
-
-.container-footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 880px;
-    background-color:  var(--background-color-black);
-   
-}
-.section-footer{
+.section-footer {
     margin-top: 16px;
+    
    
     font-size: 16px;
     line-height: 1.5;
@@ -302,11 +314,15 @@ text-transform: uppercase;
     
     
 
-    }
+}
+
+.section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .studio-footer{
    color: var(--background-color-white); 
 }
-
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
@@ -317,6 +333,9 @@ text-transform: uppercase;
 .btn-portfolio {
     
     padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+    background: #F4F4FD;
 
     font-family: "Roboto", sans-serif;
     cursor: pointer;
@@ -335,6 +354,8 @@ text-transform: uppercase;
 
 .list-porfolio {
     display: flex;
+    width: 100%;
+    height: auto;
     gap: 24px;
     justify-content: center;
 }
@@ -343,6 +364,7 @@ text-transform: uppercase;
 
 .list-foto-porfol {
     display: flex;
+    
     flex-wrap: wrap;
     padding-left: 0;
 }
@@ -380,7 +402,17 @@ text-transform: uppercase;
     
 }
 
-.container-port {
-    margin-bottom: 120px;
-}
 
+.container-footer{
+    width: 264px;
+    height: 112px;
+    padding: 0;
+
+}
+.footer {
+    background-color: var(--background-color-black);
+    padding-left: 156px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 1020px;
+}
