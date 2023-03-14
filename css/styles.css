@@ -135,8 +135,7 @@ text-transform: uppercase;
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
+    
     background-color: var(--background-color-black);
     
     text-align: center;
