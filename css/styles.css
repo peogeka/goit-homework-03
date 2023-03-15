@@ -6,6 +6,7 @@
     --hover-focus-color:  #404BBF;
     --background-color-black: #2E2F42;
     --background-color-white: #F4F4FD;
+    --border-color: #E7E9FC;
 }
 
 
@@ -56,7 +57,7 @@ text-transform: uppercase;
 
 }
 .page-header{
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-color);
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -292,7 +293,7 @@ text-transform: uppercase;
 
 .item-team {
     margin-right: 24px;
-    background: #FFFFFF;
+    background: var(--primary-white-color);
     border-radius: 0px 0px 4px 4px;
 
 }
@@ -333,8 +334,8 @@ text-transform: uppercase;
     
     padding: 12px 24px;
     border-radius: 4px;
-    border: 1px solid #E7E9FC;
-    background: #F4F4FD;
+    border: 1px solid var(--border-color);
+    background: var(--background-color-white);
 
     font-family: "Roboto", sans-serif;
     cursor: pointer;
@@ -392,7 +393,7 @@ text-transform: uppercase;
 }
 
 .text-portf {
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-color);
     border-top: 0;
 
     padding: 32px;
